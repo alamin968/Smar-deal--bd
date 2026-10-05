@@ -233,4 +233,73 @@ footer{
 </nav>
 
 <section class="hero" id="home">
-  <
+  
+<h2>Smart Deal BD-তে স্বাগতম 🎉</h2>
+<p>আপনার পছন্দের পণ্য সহজেই অর্ডার করুন।</p>
+<a class="btn" href="#products">🛒 পণ্য দেখুন</a>
+</section>
+
+<div class="search">
+<input id="search" type="text" placeholder="🔎 পণ্য খুঁজুন..." onkeyup="searchProducts()">
+</div>
+
+<h2 class="title" id="products">🔥 জনপ্রিয় পণ্য</h2>
+
+<div class="products">
+
+<div class="card">
+<div class="icon">🎧</div>
+<h3>ব্লুটুথ হেডফোন</h3>
+<p>উন্নত সাউন্ড ও সুন্দর ডিজাইন</p>
+<div class="price">৳৫৯৯</div>
+<a class="order" href="https://wa.me/8801773321921?text=আমি%20ব্লুটুথ%20হেডফোন%20অর্ডার%20করতে%20চাই" target="_blank">💬 WhatsApp অর্ডার</a>
+</div>
+
+<div class="card">
+<div class="icon">🔊</div>
+<h3>মিনি স্পিকার</h3>
+<p>ছোট সাইজে শক্তিশালী সাউন্ড</p>
+<div class="price">৳৯৯৯</div>
+<a class="order" href="https://wa.me/8801773321921?text=আমি%20মিনি%20স্পিকার%20অর্ডার%20করতে%20চাই" target="_blank">💬 WhatsApp অর্ডার</a>
+</div>
+
+<div class="card">
+<div class="icon">🌀</div>
+<h3>মিনি ফ্যান</h3>
+<p>যেকোনো জায়গায় ব্যবহারযোগ্য</p>
+<div class="price">৳৬৯৯</div>
+<a class="order" href="https://wa.me/8801773321921?text=আমি%20মিনি%20ফ্যান%20অর্ডার%20করতে%20চাই" target="_blank">💬 WhatsApp অর্ডার</a>
+</div>
+
+<div class="card">
+<div class="icon">⌚</div>
+<h3>স্মার্ট ওয়াচ</h3>
+<p>স্টাইলিশ ও আধুনিক ডিজাইন</p>
+<div class="price">৳১২৯৯</div>
+<a class="order" href="https://wa.me/8801773321921?text=আমি%20স্মার্ট%20ওয়াচ%20অর্ডার%20করতে%20চাই" target="_blank">💬 WhatsApp অর্ডার</a>
+</div>
+
+</div>
+
+<section class="contact" id="contact">
+<h2>📞 যোগাযোগ করুন</h2>
+<p>পণ্য অর্ডার করতে WhatsApp-এ মেসেজ করুন।</p>
+<br>
+<a class="btn" href="https://wa.me/8801773321921" target="_blank">💬 WhatsApp করুন</a>
+</section>
+
+<footer>
+© 2026 Smart Deal BD – All Rights Reserved
+</footer>
+
+<script>
+function searchProducts(){
+const input=document.getElementById("search").value.toLowerCase();
+document.querySelectorAll(".card").forEach(card=>{
+card.style.display=card.innerText.toLowerCase().includes(input)?"block":"none";
+});
+}
+</script>
+
+</body>
+</html>
